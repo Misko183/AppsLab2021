@@ -7,5 +7,11 @@ public class Main {
         System.out.println(new Equality().equalsNumbers(1, 1, 1));
         System.out.println(new Equality().equalsNumbers(3, 4, 3));
         System.out.println(new Equality().equalsNumbers(3, 4, 1));
+
+
+
+
+
+
     }
 }
