@@ -1,30 +1,27 @@
 package com.appslab;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
+import java.util.Scanner;
 
 public class Pie {
-    public int pieNumbers;
 
-    {
+    public static void main(String[] args) {
+        Scanner cc = new Scanner(System.in);
 
-        int a = 8;
-        int b = 3;
-        int c = 2;
-        int d = 0;
+        System.out.println("Number of pieces of cake:");
+        int NumOfPieces = cc.nextInt();
 
-        if (b * c == a) {
-            d++;
+        System.out.println("Number of people:");
+        int NumOfRecipients = cc.nextInt();
+
+        System.out.println("Number of pieces for person:");
+        int NumOfPiecesPerPerson = cc.nextInt();
+
+        if (NumOfRecipients*NumOfPieces <= NumOfPiecesPerPerson) {
+            System.out.println("True");
         }
-
-
-        if (
-                b * c != a)
-
-            if (d > 0) {
-                System.out.println("true");
-            } else if (d == 0) {
-                System.out.println("False");
-            }
+        else {
+            System.out.println("False");
+        }
     }
 }
+
